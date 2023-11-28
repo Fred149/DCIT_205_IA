@@ -1,0 +1,390 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(23, 23, 224);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: ease 0.9s;
+}
+nav ul li a:hover{
+    text-decoration: underline solid rgb(255, 102, 0);
+    transition: ease 0.9s;
+}
+
+
+
+
+footer {
+    background-color: rgb(30, 30, 170);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    
+    bottom: 0;
+    width: 100%;
+}
+.content{
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    margin-right: 20%;
+}
+.explore{
+    font-size: 1.3rem;
+    color: blue;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.sub-explore{
+    font-size: 1.1rem;
+    margin-left: 15px;
+    color: black;
+    
+
+}
+.list{
+    margin-left: 15px;
+}
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+grid-list{
+    width: 50%;
+}
+grid-list img{
+    width: 4000px;;
+}
+.gimg{
+    width: 500px;
+    height: 300px;
+}
+
+
+/* About */
+.about-header{
+    margin-top: 40px;
+    margin-left: 50%;
+}
+.about-mission{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    margin: 25px 25px 25px 25px;
+}
+
+.about-list h3{
+    margin-top: 15px;
+   
+
+}
+.about-list p{
+    margin-bottom: 10px;
+}
+.courses-content{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    gap: 5px;
+    margin: 25px 25px 25px 25px;
+}
+.courses-header{
+    text-align: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+.btn-learn{
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+margin-left: 45px;
+margin-bottom: 10px;
+}
+.btn-learn:hover{
+    background-color: #333;
+    color: yellow;
+}
+.price{
+    margin-left: 45px;
+}
+
+/* Contact page */
+pre{
+    margin-left: 30px;
+}
+
+
+/* blog page */
+.blog-content{
+    width: 80%;
+    margin:auto;
+    padding:60px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width:100%;
+}
+.blog-left h2{
+    color:#222;
+    font-weight:600;
+    margin:30px;
+}
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    background: blue;
+    color:#fff;
+    padding:7px;
+    font-size:16px;
+    margin-bottom:20px;
+}
+.blog-right div{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    color:#555;
+    padding:8px;
+    box-sizing: border-box;
+}
+
+
+.comment-box{
+    border:1px solid blue;
+     margin:50px 0;
+     padding:10px 20px;
+     
+}
+.comment-box h3{
+    text-align:left;
+    color: blue;
+}
+.comment-form input, .comment-form textarea{
+     width:100%;
+     padding:10px;
+     margin:15px 0;
+     box-sizing: border-box;
+     border:none;
+     outline:none;
+     background:#a59393;
+}
+.comment-form button{
+    margin:15px;
+    color: #fff;
+    background-color: black;
+    border-radius: 20px;
+}
+
+
+/* resources */
+.re-header{
+    background: #a59393;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+}
+.re-content{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.re-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin-left: 40px;
+    padding-top: 15px;
+}
+.re-image p{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+.re-image a{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.re-image a:hover{
+    background-color: blue;
+
+}
+/* Event page */
+.e-header{
+    background: #a59393;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 50px;
+
+}
+.e-content{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.e-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-left: 40px;
+    padding-top: 15px;
+}
+.e-image p{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+.e-image a{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.e-image a:hover{
+    background-color: blue;
+
+}
+.eventH{
+    margin-left: 35%;
+}
+
+/* Catalog page codes*/
+.c-header{
+    margin-left: 20%;
+}
+
+.cat-grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color:rgb(240, 238, 235);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ACADEMIC PAGE CSS CODES */
+.aca-header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.aca-grid{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    background-color:rgb(240, 238, 235);
+    text-align: center;
+}
+.aca-btn{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.aca-btn:hover{
+    background-color: blue;
+}
+
+.aca-btn1{
+    text-decoration: none;
+    color: #fff;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+    
+}
+.aca-btn1:hover{
+    text-decoration: underline;
+}
+
+
+/* Staff profile codes css */
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.profile-card {
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #666;
+}
+
+.p {
+    color: #777;
+}
+.staff-header{
+    text-align: center;
+    color: blue;
+}
